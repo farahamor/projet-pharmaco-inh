@@ -1,0 +1,35 @@
+# Node / Electron
+node_modules/
+npm-debug.log*
+package-lock.json
+
+# IntelliJ
+.idea/
+*.iml
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Python / ML
+*.pkl
+
+# Logs
+*.log
+
+# OS
+Thumbs.db
+.DS_Store
+# Données patients
+data/*.xlsx
+# Ancien projet Spring Boot / Gradle
+.gradle/
+gradle/
+gradlew
+gradlew.bat
+build.gradle
+settings.gradle
+HELP.md
+src/

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>INH - Recommandation</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>INH</h1>
+        <p>Individualisation de la posologie</p>
+    </div>
+
+    <div class="card">
+
+        <h2>Recommandation posologique</h2>
+
+        <!-- Informations patient -->
+        <div class="patient-summary">
+
+            <div>
+                <span>Patient</span>
+                <strong id="patientName">-</strong>
+            </div>
+
+            <div>
+                <span>Poids</span>
+                <strong id="patientWeight">-</strong>
+            </div>
+
+            <div>
+                <span>Dose actuelle</span>
+                <strong id="currentDose">-</strong>
+            </div>
+
+            <div>
+                <span>Concentration C<sub>3</sub></span>
+                <strong id="patientC3">-</strong>
+            </div>
+
+        </div>
+
+        <!-- Bouton prédiction -->
+        <div class="prediction-action">
+
+            <button id="btnPredire" class="btn-primary btn-large">
+                Prédire
+            </button>
+
+        </div>
+
+
+        <!-- Résultats : cachés au départ -->
+        <div id="predictionResults" class="hidden">
+
+            <div class="main-result">
+
+                <span>DP/C<sub>2</sub> prédit</span>
+
+                <strong id="dpC2Result">-</strong>
+
+            </div>
+
+
+            <h3>Recommandation de dose</h3>
+
+            <div class="dose-recommendation">
+
+                <div class="dose-box">
+                    <span>Dose minimale</span>
+                    <strong id="doseMin">-</strong>
+                    <small>mg/jour</small>
+                </div>
+
+                <div class="dose-box">
+                    <span>Dose moyenne</span>
+                    <strong id="doseAverage">-</strong>
+                    <small>mg/jour</small>
+                </div>
+
+                <div class="dose-box">
+                    <span>Dose maximale</span>
+                    <strong id="doseMax">-</strong>
+                    <small>mg/jour</small>
+                </div>
+
+            </div>
+
+
+            <div class="success-message hidden"
+                 id="successMessage">
+
+                ✓ Patient enregistré avec succès.
+
+            </div>
+
+
+            <div class="navigation">
+
+                <button
+                        id="btnRetour"
+                        class="btn-secondary">
+
+                    ← Retour
+
+                </button>
+
+                <button
+                        id="btnEnregistrer"
+                        class="btn-primary">
+
+                    Enregistrer le patient
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="recommendation.js"></script>
+
+</body>
+</html>
